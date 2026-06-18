@@ -1,0 +1,15 @@
+<page name="proyectos">
+<style>
+  box { direction: column; gap: 1; }
+  text { color: white; }
+</style>
+<box gap="1">
+  <include src="components/layout_demo.hml"/>
+  <include src="components/scroll_demo.hml"/>
+  <box border="true" padding="1">
+    <text color="cyan" text-align="center">📊 Resumen Proyectos</text>
+    <text>dino-hatch: Framework TUI en Go (activo)</text>
+    <text>proyecto-x: En desarrollo (placeholder)</text>
+  </box>
+</box>
+</page>

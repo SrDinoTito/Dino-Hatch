@@ -1,0 +1,21 @@
+<page name="textarea_demo">
+<style>
+  text { color: white; }
+</style>
+<box border="true" padding="1" direction="column" gap="1">
+  <text color="yellow">📝 Textarea con Scrollbar Demo</text>
+  <text>Prueba: Scrollbar interno (▐) en textarea con overflow content</text>
+  <text>Esperado: Barra de scroll vertical en el margen derecho del textarea</text>
+  <textarea height="6" border="true">Linea 1: Textarea con scroll interno.
+Linea 2: Escribe mas lineas con Enter.
+Linea 3: El scrollbar ▐ aparece aqui.
+Linea 4: Usa la rueda del mouse tambien.
+Linea 5: Scroll independiente de pagina.
+Linea 6: Sigue para ver mas contenido.
+Linea 7: Cada linea agrega scroll.
+Linea 8: El scrollbar es proporcional.
+Linea 9: Casi al fondo del textarea.
+Linea 10: Fin del contenido.</textarea>
+  <text color="green">✅ Scrollbar ▐ visible en margen derecho cuando hay overflow</text>
+</box>
+</page>

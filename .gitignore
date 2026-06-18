@@ -1,0 +1,39 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+*.test
+*.out
+
+# Go workspace
+go.work
+go.work.sum
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+/tmp/
+/dist/
+/hatch
+
+# Agent system (SDD specs)
+AGENTS.md
+agent/
+
+# Logs
+*.log
+canva/logs/
+
+# Temp files
+*~

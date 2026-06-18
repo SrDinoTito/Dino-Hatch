@@ -1,0 +1,23 @@
+<page name="modal-page">
+  <style>
+    box { direction: column; gap: 1; }
+    text { color: white; }
+  </style>
+  <box id="modal-bg" grow="1" align="center" justify="center">
+    <box id="modal-box" width="40" height="12" bg="#1a1a1a" border="true" gap="1" direction="column">
+      <box height="1" bg="#3366ff">
+        <text text-align="center" color="white">Dialogo Modal</text>
+      </box>
+      <text text-align="center">Este es un modal de ejemplo.</text>
+      <text text-align="center">Presiona ESC o haz click fuera para cerrar.</text>
+      <box height="4" gap="2" align="center" justify="center">
+        <button id="btn-cancel-modal" width="12">
+          <text text-align="center">Cancelar</text>
+        </button>
+        <button id="btn-confirm-modal" width="12">
+          <text text-align="center">OK</text>
+        </button>
+      </box>
+    </box>
+  </box>
+</page>

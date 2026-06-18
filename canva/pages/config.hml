@@ -1,0 +1,26 @@
+<page name="config">
+<style>
+  box { direction: column; gap: 1; }
+  text { color: white; }
+  textarea { overflow: scroll; bg: #111; color: #0f0; }
+  button { bg: #3366ff; color: white; }
+</style>
+<box gap="1">
+  <include src="components/events_demo.hml"/>
+  <include src="components/bind_demo.hml"/>
+  <include src="components/theme_demo.hml"/>
+  <!-- Seccion exec -->
+  <box border="true" padding="1" direction="column" gap="1">
+    <text>🔧 Exec / Curl — Acciones externas</text>
+    <text dim="true">Prueba: onclick ejecuta comandos/HTTP y muestra output en el textarea</text>
+    <text dim="true">Esperado: Output visible en el panel de logs</text>
+    <box gap="1">
+      <button id="btn-ls" onclick="action:exec ls -la">Ejecutar ls</button>
+      <button id="btn-date" onclick="action:exec date">Fecha</button>
+      <button id="btn-curl" onclick="action:curl https://httpbin.org/get">HTTP GET</button>
+      <button id="btn-uname" onclick="action:exec uname -a">uname</button>
+    </box>
+    <textarea id="exec-log" height="8" overflow="scroll" readonly="true" border="true"/>
+  </box>
+</box>
+</page>

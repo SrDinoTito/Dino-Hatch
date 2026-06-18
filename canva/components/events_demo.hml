@@ -1,0 +1,16 @@
+<page name="events_demo">
+<style>
+  box { direction: column; gap: 1; }
+  button { bg: #ff6633; color: white; padding: 1; }
+</style>
+<box border="true" padding="1" direction="column" gap="1">
+  <text>📢 Eventos Declarativos</text>
+  <text dim="true">Prueba: onclick ejecuta page:, modal:, action:, theme:, exec:, curl:</text>
+  <text dim="true">Esperado: Navegación, modal, comandos o cambio de tema</text>
+  <box gap="1">
+    <button onclick="page:proyectos">📂 Ir a Proyectos</button>
+    <button onclick="modal:open">🪟 Abrir Modal</button>
+    <button onclick="action:random_colors">🎲 Random Colors</button>
+  </box>
+</box>
+</page>

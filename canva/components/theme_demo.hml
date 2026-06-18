@@ -1,0 +1,17 @@
+<page name="theme_demo">
+<style>
+  box { direction: column; gap: 1; }
+  button { bg: #663399; color: white; padding: 1; }
+  text { color: var(--primary); }
+</style>
+<box border="true" padding="1" direction="column" gap="1">
+  <text>🎨 Temas Dinámicos</text>
+  <text dim="true">Prueba: onclick="action:theme default/dark/light" cambia colores en vivo</text>
+  <text dim="true">Esperado: Los colores cambian al hacer click en los botones</text>
+  <box gap="1">
+    <button onclick="action:theme default">🌞 Default</button>
+    <button onclick="action:theme dark">🌙 Dark</button>
+    <button onclick="action:theme light">☀️ Light</button>
+  </box>
+</box>
+</page>

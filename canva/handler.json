@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "logs": true,
+  "bindings": [
+    {
+      "action": "quit",
+      "keys": ["Ctrl+C", "Esc", "q", "Q"],
+      "description": "Salir de la aplicacion"
+    },
+    {
+      "action": "random_colors",
+      "keys": ["D"],
+      "description": "Toggle colores aleatorios en boxes (Shift+D)"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<page name="bind_demo">
+<style>
+  text { color: white; }
+</style>
+<box border="true" padding="1" direction="column" gap="1">
+  <text color="yellow">🔗 Data Binding Demo</text>
+  <text>Prueba: bind en input sincroniza texto con elemento target</text>
+  <text>Esperado: Al escribir abajo, el texto del output se actualiza al instante</text>
+  <input id="bind-input" bind="bind-output" placeholder="Escribe aqui..."/>
+  <box border="true" padding="1" bg="#1a3366" direction="column" gap="0">
+    <text color="cyan">Output sincronizado:</text>
+    <text id="bind-output" color="green">(el texto aparecera aqui)</text>
+  </box>
+  <text color="green">✅ bind="bind-output" actualiza el elemento con id="bind-output"</text>
+</box>
+</page>

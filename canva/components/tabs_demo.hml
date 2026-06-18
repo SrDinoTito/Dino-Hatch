@@ -1,0 +1,18 @@
+<page name="tabs_demo">
+<style>
+  text { color: white; }
+</style>
+<box border="true" padding="1" direction="column" gap="1">
+  <text color="yellow">↹ Tab Navigation Demo</text>
+  <text>Prueba: Navegacion por Tab/Shift+Tab entre elementos focusables</text>
+  <text>Esperado: Tab avanza, Shift+Tab retrocede entre input/textarea/button</text>
+  <input placeholder="Campo 1 — presiona Tab aqui"/>
+  <input placeholder="Campo 2 — siguiente foco"/>
+  <textarea height="3" placeholder="Textarea focusable por Tab"/>
+  <box direction="row" gap="1">
+    <button><text>Boton A</text></button>
+    <button><text>Boton B</text></button>
+  </box>
+  <text color="green">✅ Tab/Shift+Tab navega en orden DFS sobre input/textarea/button</text>
+</box>
+</page>

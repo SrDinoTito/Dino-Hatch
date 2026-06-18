@@ -1,0 +1,25 @@
+<page name="ayuda">
+<style>
+  box { direction: column; gap: 1; }
+  text { color: white; }
+</style>
+<box gap="1">
+  <include src="components/textarea_demo.hml"/>
+  <include src="components/tabs_demo.hml"/>
+  <box border="true" padding="1" direction="column" gap="0">
+    <text color="yellow">⌨️ Atajos de Teclado</text>
+    <text>  ↑↓ / Mouse Wheel  — Scroll pagina/contenedor</text>
+    <text>  Tab / Shift+Tab    — Navegar entre elementos</text>
+    <text>  Click              — Enfocar input/textarea/boton</text>
+    <text>  Ctrl+C / q / Q     — Salir</text>
+    <text>  ESC                — Desenfocar / Cerrar modal</text>
+    <text>  Shift+D            — Toggle colores aleatorios</text>
+  </box>
+  <box border="true" padding="1" direction="column" gap="0">
+    <text color="yellow">📦 Component System</text>
+    <text>  Los componentes se incluyen con:</text>
+    <text>  &lt;include src="components/nombre.hml"&gt;</text>
+    <text>  Atributos extra se mergean al root del componente.</text>
+  </box>
+</box>
+</page>

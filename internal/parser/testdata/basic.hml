@@ -1,0 +1,6 @@
+<page name="main" width="80" height="24">
+  <box direction="row" gap="2">
+    <text color="green">Hola</text>
+    <text color="red">Mundo</text>
+  </box>
+</page>

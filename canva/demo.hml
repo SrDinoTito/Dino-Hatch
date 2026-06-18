@@ -1,0 +1,57 @@
+<page name="main">
+  <style>
+    box {
+      direction: column;
+      gap: 1;
+    }
+    text {
+      color: white;
+    }
+    button {
+      border: true;
+    }
+  </style>
+
+  <box direction="column" gap="1">
+    <!-- Navbar horizontal - sticky -->
+    <box id="navbar" sticky="true" border="true" direction="row" gap="1">
+      <button id="nav-inicio" grow="1" onclick="page:inicio">
+        <text text-align="center">🏠 Inicio</text>
+      </button>
+      <button id="nav-proyectos" grow="1" onclick="page:proyectos">
+        <text text-align="center">📐 Proyectos</text>
+      </button>
+      <button id="nav-config" grow="1" onclick="page:config">
+        <text text-align="center">⚙ Config</text>
+      </button>
+      <button id="nav-ayuda" grow="1" onclick="page:ayuda">
+        <text text-align="center">❓ Ayuda</text>
+      </button>
+    </box>
+
+    <!-- Cuerpo: sidebar + contenido -->
+    <box direction="row" gap="1" grow="1">
+      <!-- Sidebar -->
+      <box width="16" border="true" direction="column" gap="1">
+        <text color="yellow" text-align="center">Menu</text>
+        <button id="nav-inicio" border="true" onclick="page:inicio">
+          <text text-align="center">🏠 Inicio</text>
+        </button>
+        <button id="nav-proyectos" border="true" onclick="page:proyectos">
+          <text text-align="center">📐 Proyectos</text>
+        </button>
+        <button id="nav-config" border="true" onclick="page:config">
+          <text text-align="center">⚙ Config</text>
+        </button>
+        <button id="nav-ayuda" border="true" onclick="page:ayuda">
+          <text text-align="center">❓ Ayuda</text>
+        </button>
+      </box>
+
+      <!-- Contenido principal -->
+      <box id="content-area" gap="2" grow="1">
+        <!-- Se carga dinamicamente desde canva/pages/ -->
+      </box>
+    </box>
+  </box>
+</page>

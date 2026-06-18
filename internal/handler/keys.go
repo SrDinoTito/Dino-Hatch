@@ -1,0 +1,46 @@
+// Package handler — keyNames para FormatKey.
+package handler
+
+import "github.com/gdamore/tcell/v2"
+
+// keyNames mapea tcell.Key a strings legibles para FormatKey.
+var keyNames = map[tcell.Key]string{
+	tcell.KeyCtrlA: "Ctrl+A", tcell.KeyCtrlB: "Ctrl+B",
+	tcell.KeyCtrlC: "Ctrl+C", tcell.KeyCtrlD: "Ctrl+D",
+	tcell.KeyCtrlE: "Ctrl+E", tcell.KeyCtrlF: "Ctrl+F",
+	tcell.KeyCtrlG: "Ctrl+G", tcell.KeyCtrlH: "Ctrl+H",
+	tcell.KeyCtrlI: "Ctrl+I", tcell.KeyCtrlJ: "Ctrl+J",
+	tcell.KeyCtrlK: "Ctrl+K", tcell.KeyCtrlL: "Ctrl+L",
+	tcell.KeyCtrlM: "Ctrl+M", tcell.KeyCtrlN: "Ctrl+N",
+	tcell.KeyCtrlO: "Ctrl+O", tcell.KeyCtrlP: "Ctrl+P",
+	tcell.KeyCtrlQ: "Ctrl+Q", tcell.KeyCtrlR: "Ctrl+R",
+	tcell.KeyCtrlS: "Ctrl+S", tcell.KeyCtrlT: "Ctrl+T",
+	tcell.KeyCtrlU: "Ctrl+U", tcell.KeyCtrlV: "Ctrl+V",
+	tcell.KeyCtrlW: "Ctrl+W", tcell.KeyCtrlX: "Ctrl+X",
+	tcell.KeyCtrlY: "Ctrl+Y", tcell.KeyCtrlZ: "Ctrl+Z",
+	tcell.KeyBackspace: "Backspace",
+	tcell.KeyTab:       "Tab",
+	tcell.KeyEscape:    "Esc",
+	tcell.KeyEnter:     "Enter",
+	tcell.KeyDelete:    "Delete",
+	tcell.KeyHome:      "Home",
+	tcell.KeyEnd:       "End",
+	tcell.KeyUp:        "Up",
+	tcell.KeyDown:      "Down",
+	tcell.KeyLeft:      "Left",
+	tcell.KeyRight:     "Right",
+	tcell.KeyPgUp:      "PgUp",
+	tcell.KeyPgDn:      "PgDn",
+	tcell.KeyF1:        "F1",
+	tcell.KeyF2:        "F2",
+	tcell.KeyF3:        "F3",
+	tcell.KeyF4:        "F4",
+	tcell.KeyF5:        "F5",
+	tcell.KeyF6:        "F6",
+	tcell.KeyF7:        "F7",
+	tcell.KeyF8:        "F8",
+	tcell.KeyF9:        "F9",
+	tcell.KeyF10:       "F10",
+	tcell.KeyF11:       "F11",
+	tcell.KeyF12:       "F12",
+}

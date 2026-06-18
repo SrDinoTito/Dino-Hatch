@@ -1,0 +1,43 @@
+<page name="inicio">
+<style>
+  box { direction: column; gap: 1; }
+  text { color: white; }
+  button { border: true; }
+</style>
+<box gap="1">
+  <box border="true" padding="1" bg="#1a3366">
+    <text color="yellow" text-align="center">🚀 HATCH Framework — Demo Completa</text>
+    <text text-align="center">Framework TUI declarativo en Go — v0.0.1</text>
+  </box>
+  <box border="true" padding="1" direction="column" gap="0">
+    <text color="cyan" text-align="center">✅ Features Demostradas (12)</text>
+    <text>  📐 Layout flexbox: grow, gap, align, justify</text>
+    <text>  📦 Padding, Margin, Min/Max constraints</text>
+    <text>  📜 Overflow scroll por contenedor</text>
+    <text>  📏 Scrollbar visual pagina/contenedor</text>
+    <text>  ↹ Tab navigation entre elementos</text>
+    <text>  🖱️ Eventos declarativos onclick</text>
+    <text>  🔗 Data binding bind="target-id"</text>
+    <text>  🎨 CSS variables desde :root</text>
+    <text>  📦 Component system con includes</text>
+    <text>  📝 Scrollbar interno en textarea</text>
+    <text>  ⌨️ Key bindings configurables</text>
+    <text>  🎨 Random colors debug mode</text>
+  </box>
+  <box direction="row" gap="1" height="4">
+    <button grow="1" onclick="page:proyectos">
+      <text text-align="center">▶ Proyectos</text>
+    </button>
+    <button grow="1" onclick="page:config">
+      <text text-align="center">▶ Config</text>
+    </button>
+    <button grow="1" onclick="page:ayuda">
+      <text text-align="center">▶ Ayuda</text>
+    </button>
+    <button grow="1" onclick="modal:open">
+      <text text-align="center">📋 Modal</text>
+    </button>
+  </box>
+  <text color="gray" text-align="center">Tab=nav | Click=navegar | Wheel=scroll | q=quit</text>
+</box>
+</page>

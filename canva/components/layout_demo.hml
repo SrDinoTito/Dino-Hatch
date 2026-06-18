@@ -1,0 +1,31 @@
+<page name="layout_demo">
+<style>
+  text { color: white; }
+</style>
+<box border="true" padding="1" direction="column" gap="1">
+  <text color="yellow">📐 Layout Flexbox Demo</text>
+  <text>Prueba: grow proporcional, gap, align, justify, padding, margin</text>
+  <text>Esperado: Cajas distribuidas con grow 1:2:1 y gap entre elementos</text>
+  <box direction="row" gap="1" height="4">
+    <box grow="1" bg="#336633" align="center" justify="center">
+      <text>grow=1</text>
+    </box>
+    <box grow="2" bg="#336666" align="center" justify="center">
+      <text>grow=2</text>
+    </box>
+    <box grow="1" bg="#333366" align="center" justify="center">
+      <text>grow=1</text>
+    </box>
+  </box>
+  <box direction="row" gap="2" height="4" justify="space-between">
+    <box border="true" padding="1" bg="#442233">
+      <text text-align="center">padding=1</text>
+    </box>
+    <box border="true" padding="2" bg="#224433">
+      <text text-align="center">padding=2</text>
+    </box>
+  </box>
+  <text color="green">✅ grow proporcional (1:2:1) con gap=1 entre celdas</text>
+  <text color="green">✅ padding visual con border en las cajas de ejemplo</text>
+</box>
+</page>

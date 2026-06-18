@@ -1,0 +1,24 @@
+<page name="scroll_demo">
+<style>
+  text { color: white; }
+</style>
+<box border="true" padding="1" direction="column" gap="1">
+  <text color="yellow">📜 Scroll Container Demo</text>
+  <text>Prueba: overflow scroll en contenedores</text>
+  <text>Esperado: Usa la rueda del mouse sobre la caja azul para scrollear su contenido independientemente de la pagina</text>
+  <box id="scroll-box" height="8" border="true" overflow="scroll" direction="column" gap="1" padding="1" bg="#1a3366">
+    <text>Item 1 — Scroll container test</text>
+    <text>Item 2 — Mouse wheel aqui</text>
+    <text>Item 3 — Scrollbar a la derecha</text>
+    <text>Item 4 — Contenido independiente</text>
+    <text>Item 5 — Sigue scrolleando</text>
+    <text>Item 6 — Mas items aqui</text>
+    <text>Item 7 — Casi llegamos</text>
+    <text>Item 8 — Ultimo item visible</text>
+    <text>Item 9 — Scroll mas abajo</text>
+    <text>Item 10 — Fin del scroll container</text>
+  </box>
+  <text color="green">✅ Scrollbar visible en margen derecho del contenedor azul</text>
+  <text color="green">✅ Scroll del contenedor no afecta al resto de la pagina</text>
+</box>
+</page>

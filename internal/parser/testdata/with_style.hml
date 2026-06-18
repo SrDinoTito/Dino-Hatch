@@ -1,0 +1,9 @@
+<page name="main" width="80" height="24">
+  <style>
+    box { direction: column; gap: 1; }
+    text { color: white; }
+  </style>
+  <box>
+    <text color="green">Texto con estilo</text>
+  </box>
+</page>

@@ -1,0 +1,5 @@
+<page name="main">
+  <box>
+    <text color="green"@bad>Hola</text>
+  </box>
+</page>

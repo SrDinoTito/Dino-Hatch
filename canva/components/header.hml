@@ -1,0 +1,7 @@
+<page name="header">
+  <box border="true" padding="1">
+    <text>🔧 Header Component</text>
+    <text>Prueba: Include resolution con merge de atributos</text>
+    <text>Esperado: Borde azul, padding aplicado</text>
+  </box>
+</page>
