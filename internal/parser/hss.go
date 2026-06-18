@@ -12,7 +12,7 @@ import (
 // Recibe el texto raw entre las etiquetas <style> y </style>.
 // Propiedades desconocidas se ignoran con warning (log.Printf).
 // Selectores :root se ignoran (no generan StyleRule);
-// usa ParseCSSVars para extraer sus variables CSS.
+// usa ParseCSSVars para extraer sus variables HSS.
 func ParseHSS(styleContent string) ([]ast.StyleRule, error) {
 	content := strings.TrimSpace(styleContent)
 	if content == "" {
@@ -64,7 +64,7 @@ func ParseHSS(styleContent string) ([]ast.StyleRule, error) {
 		props := parseProperties(body)
 
 		if selector == ":root" {
-			// :root no genera StyleRule, solo CSS variables
+			// :root no genera StyleRule, solo variables HSS
 			// (extraer con ParseCSSVars si es necesario)
 		} else if len(props) > 0 {
 			rules = append(rules, ast.StyleRule{
@@ -81,7 +81,7 @@ func ParseHSS(styleContent string) ([]ast.StyleRule, error) {
 	return rules, nil
 }
 
-// ParseCSSVars extrae CSS variables (claves "--") del selector :root
+// ParseCSSVars extrae variables HSS (claves "--") del selector :root
 // en el contenido de un bloque <style>.
 func ParseCSSVars(styleContent string) map[string]string {
 	content := strings.TrimSpace(styleContent)

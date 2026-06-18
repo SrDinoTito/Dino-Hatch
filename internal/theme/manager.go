@@ -7,7 +7,7 @@ import (
 )
 
 // Manager gestiona multiples temas y permite cambiar entre ellos.
-// Cada tema es un mapa de variables CSS (nombre → valor).
+// Cada tema es un mapa de variables HSS (nombre → valor).
 type Manager struct {
 	mu     sync.RWMutex
 	themes map[string]map[string]string

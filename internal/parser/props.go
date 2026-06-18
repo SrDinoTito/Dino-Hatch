@@ -22,7 +22,7 @@ func resolveCSSVars(val string, vars map[string]string) string {
 
 // applyProps aplica un mapa de propiedades a un ComputedStyle.
 // Marca en `exp` las propiedades aplicadas para controlar herencia.
-// `vars` son las CSS variables de :root para resolver var(--name).
+// `vars` son las variables HSS de :root para resolver var(--name).
 func applyProps(s *ast.ComputedStyle, props map[string]string, vars map[string]string, exp map[string]bool) {
 	for k, v := range props {
 		v = resolveCSSVars(v, vars)

@@ -10,7 +10,7 @@ import (
 )
 
 // ComputeStyles recibe un Document (AST raw), las reglas HSS,
-// y las CSS variables de :root, y resuelve los estilos computados para cada nodo.
+// y las variables HSS de :root, y resuelve los estilos computados para cada nodo.
 func ComputeStyles(doc *ast.Document, rules []ast.StyleRule, vars map[string]string) *ast.Document {
 	rulesBySel := make(map[string]map[string]string, len(rules))
 	for _, r := range rules {
@@ -26,7 +26,7 @@ func ComputeStyles(doc *ast.Document, rules []ast.StyleRule, vars map[string]str
 }
 
 // resolveNode aplica estilos recursivamente: defaults, HSS, inline, herencia.
-// `vars` son las CSS variables de :root para resolver var(--name).
+// `vars` son las variables HSS de :root para resolver var(--name).
 func resolveNode(children *[]ast.ElementNode, rulesBySel map[string]map[string]string, vars map[string]string, parent *ast.ComputedStyle) {
 	for i := range *children {
 		n := &(*children)[i]

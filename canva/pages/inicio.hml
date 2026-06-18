@@ -18,7 +18,7 @@
     <text>  ↹ Tab navigation entre elementos</text>
     <text>  🖱️ Eventos declarativos onclick</text>
     <text>  🔗 Data binding bind="target-id"</text>
-    <text>  🎨 CSS variables desde :root</text>
+    <text>  🎨 HSS variables desde :root</text>
     <text>  📦 Component system con includes</text>
     <text>  📝 Scrollbar interno en textarea</text>
     <text>  ⌨️ Key bindings configurables</text>

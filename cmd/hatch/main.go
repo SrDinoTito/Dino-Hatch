@@ -57,7 +57,7 @@ func main() {
 		}
 		rules = append(rules, r...)
 	}
-	// Wave 6: Extraer CSS variables de los bloques :root
+	// Wave 6: Extraer variables HSS de los bloques :root
 	if allStyleContent != "" {
 		if vars := parser.ParseCSSVars(allStyleContent); len(vars) > 0 {
 			doc.ThemeVars = vars

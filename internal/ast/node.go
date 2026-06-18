@@ -5,7 +5,7 @@ import "github.com/gdamore/tcell/v2"
 // Document representa el archivo .hml completo
 type Document struct {
 	Pages     []Page
-	ThemeVars map[string]string // CSS variables de :root, ej: {"--bg": "#333"}
+	ThemeVars map[string]string // Variables HSS de :root, ej: {"--bg": "#333"}
 }
 
 // Page representa una pantalla/interfaz

@@ -20,7 +20,7 @@
 |----------|----------|-------------|
 | `id` | Todos | Identificador único para data binding y navegación |
 | `style` | Todos | Estilos HSS inline (ej: `style="color: red; padding: 2"`) |
-| `class` | Todos | Clase CSS para estilos compartidos |
+| `class` | Todos | Clase HSS para estilos compartidos |
 | `onclick` | box, button, text, input, textarea | Evento al hacer clic |
 | `onchange` | input, textarea | Evento al cambiar el valor |
 | `onfocus` | input, textarea | Evento al recibir foco |
@@ -63,7 +63,7 @@
 | `background-color` | nombre / `#rrggbb` / `var(--name)` | Color de fondo |
 | `font-weight` | `bold` / `normal` | Peso de fuente (negrita) |
 
-## CSS Variables / Theming
+## HSS Variables / Theming
 
 ```hml
 <style>
@@ -76,7 +76,7 @@
 
 | Sintaxis | Descripción |
 |----------|-------------|
-| `:root { --name: value }` | Define una variable CSS en el tema |
+| `:root { --name: value }` | Define una variable HSS en el tema |
 | `var(--name)` | Usa el valor de la variable en cualquier propiedad |
 | `theme.add("name", vars)` | API Go para registrar un tema programáticamente |
 | `theme.switch("name")` | Cambia el tema activo en runtime |
@@ -169,7 +169,7 @@ type BoundBox struct {
 
 ```
 .hml → ParseHML() → AST raw → resolveIncludes()
-→ ComputeStyles() (herencia + defaults + CSS vars)
+→ ComputeStyles() (herencia + defaults + HSS vars)
 → Layout() (flexbox + min/max + padding/margin)
 → CellBuffer (Diff con frame anterior)
 → Screen.SetContent() → tcell.Show()

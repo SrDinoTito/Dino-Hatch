@@ -107,7 +107,7 @@ func (s *AppState) LoadPage(name string) {
 	contentArea := s.FindElementByID("content-area")
 	if contentArea == nil { log.Printf("Warning: no se encontro content-area"); return }
 
-	// Extraer CSS variables y guardar tema default
+	// Extraer variables HSS y guardar tema default
 	var all string
 	for _, b := range styleBlocks { all += b + "\n" }
 	if vars := parser.ParseCSSVars(all); len(vars) > 0 {

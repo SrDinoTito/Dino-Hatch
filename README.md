@@ -16,7 +16,7 @@ Módulo:  github.com/srdino/dino-hatch
 ## Pipeline
 
 ```
-.hml → Parser (HML+HSS) → AST raw → resolveIncludes → ComputeStyles (con CSS vars)
+.hml → Parser (HML+HSS) → AST raw → resolveIncludes → ComputeStyles (con HSS vars)
 → Layout (flexbox + min/max clamping + padding/margin)
 → Render (CellBuffer persistente + Diff) → tcell.Show()
 ```
@@ -30,12 +30,12 @@ Módulo:  github.com/srdino/dino-hatch
 | Feature | Descripción |
 |---------|-------------|
 | **Parseo HML** | XML-like a AST (`Document`, `Page`, `ElementNode`) |
-| **Parseo HSS** | CSS-like en bloques `<style>`, incluyendo `:root` |
+| **Parseo HSS** | HSS-like en bloques `<style>`, incluyendo `:root` |
 | **Component system** | `<include src="...">` con merge de atributos y estilos, includes anidados |
 | **Layout flexbox** | `direction`, `grow`, `gap`, `align`, `justify`, `padding`, `margin`, `min-width/height`, `max-width/height` |
 | **Overflow scroll** | Per-container `overflow: scroll` con scrollbar visual y clipping de hijos |
 | **CellBuffer + Diff** | Buffer persistente, solo envía celdas cambiadas a tcell, dirty flag |
-| **CSS variables / Theming** | `:root { --x: y }` + `var(--x)` en estilos, multi-tema dinámico |
+| **HSS variables / Theming** | `:root { --x: y }` + `var(--x)` en estilos, multi-tema dinámico |
 
 ### Interactividad
 
@@ -141,7 +141,7 @@ dino-hatch/
 │   ├── ast/               ← Tipos AST (node.go, node_test.go)
 │   │   ├── node.go        ← Document, Page, ElementNode, ComputedStyle, BoundBox
 │   │   └── node_test.go   ← Tests AST (100% cobertura)
-│   ├── parser/            ← Parser HML+HSS, ComputeStyles, CSS vars
+│   ├── parser/            ← Parser HML+HSS, ComputeStyles, HSS vars
 │   │   ├── hml.go         ← ParseHML, preprocessStyleBlocks
 │   │   ├── hml_parse.go   ← pageFromStartElement, parseElement, attrsFromSlice
 │   │   ├── hss.go         ← ParseHSS, ParseCSSVars, parseProperties
